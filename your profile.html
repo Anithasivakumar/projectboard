@@ -1,0 +1,112 @@
+<html>
+<h1><center>PROFILE</CENTER></h1>
+<style type="text/css">
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 60px auto;
+    width: 640px;
+
+/* For visibility. Delete me */
+border: 1px solid black;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid black;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid black;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid black;
+}
+
+#Info
+{
+    width: 400px;
+    text-align: center;
+
+    /* Move it to the right */
+    float: right;
+
+/* For visibility. Delete me */
+border: 1px solid blue;
+}
+
+#Info strong
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 100px;
+
+/* For visibility. Delete me */
+border: 1px solid grey;
+}
+
+</style>
+
+<div id="ProfilePage">
+    <div id="LeftCol">
+	<div id="Photo">
+	</div>
+	<div id="ProfileOptions">
+        PHOTO
+        </div>
+	</div>
+
+    <div id="Info">
+        <p>
+            <strong>NAME:</strong>
+			<input type="text" name="name">
+            <span> </span>
+        </p>
+        <p>
+            <strong>D.O.B:</strong>
+			<input type="datetime-local">
+            <span> </span>
+        </p>
+        <p>
+            <strong>AGE:</strong>
+			<input type="number" name="age">
+            <span></span>
+        </p>
+        <p>
+            <strong>GENDER</strong>
+			<input type="text" name="gender">
+			<span></span>
+        </p>
+        <p>
+            <strong>COLLEGE NAME:</strong>
+			<input type="text" name="name">
+            <span></span>
+        </p>
+    </div>
+
+    <!-- Needed because other elements inside ProfilePage have floats -->
+    <div style="clear:both"></div>
+</div>
+</html>
